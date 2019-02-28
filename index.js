@@ -7,7 +7,8 @@ const bot = new Telegraf(API_KEY); //Create new bot
 
 bot.help(ctx => ctx.reply("Sorry can't help! Bye!")); //same as const Help=ctx => ctx.reply("Hello"); bot.help(Help)
 
-bot.command('hello', ctx => ctx.reply("Hello there!"))
+
+bot.hears('hello', ctx => ctx.reply('haha'));
 bot.launch();
 
 
