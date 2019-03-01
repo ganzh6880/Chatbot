@@ -1,10 +1,9 @@
-
 console.log("Running Bot");
 const Telegraf = require('telegraf'); //import lib
 const URL = process.env.URL || 'https://garagechatbot.herokuapp.com';
 const PORT = process.env.PORT || 3000;
 
-const APIKEY = require('./API_KEY');
+const APIKEY = require('../API_KEY');
 
 const bot = new Telegraf(APIKEY); //Create new bot
 bot.telegram.setWebhook(`${URL}/bot${APIKEY}`);
