@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "telegraf": "^3.27.1"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0"
   }
 }
