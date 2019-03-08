@@ -16,8 +16,8 @@ bot.hears(/hello/i, ctx => ctx.reply('Hello there!')); // /hello/i = (/../i: Reg
 bot.start(ctx => ctx.reply("Hello"));
 
 if (process.env.NODE_ENV === "production") {
-  bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
-  bot.startWebhook(`/bot${API_TOKEN}`, null, PORT);
+  bot.telegram.setWebhook(`${URL}/bot${API_KEY}`);
+  bot.startWebhook(`/bot${API_KEY}`, null, PORT);
 } else {
   bot.launch();
 }
