@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- 11.0.0
+deploy:
+  provider: heroku
+  app: garagechatbot
+  api_key:
+    secure: KGRhWvlHnntRlU2D/E14q8R0CqMt64k+22eoiYu12gqpN5NNxIneFv2Gjn0oZmNhIOSwjd8G9VNZ3BK6OjBpW5QDzOJQ7KckYEvNACIBDPF/to3QFXkvcmXJQk53E2w36o83t8qqaR+c8+tmtsc9nuZ/O0oGGH2QqbF+zkV2WRcs4jGLazQwaXkcAf/KQQmY6j4k2ZWxD6QykngJiUly9oVGChK/vVbb/zi4UNvd1sTUfW8ef2X+U1H/TWYBJuqdEVU5Of9I101BT/g5IEnz4/OaKGkyqKJx6z7ZS9Z3kQKu3U/8CZPDng/oXj28XXCCq8PYL/F0qqfA+UHMumgeniU2QuNJ2yQdq10e5rfJE/y82i2LxiO19KdWZ68IDjuIb+EfIBpBIyWETvtMtmFQPpb+ucMljvQqulbkV82AEZUNYMKO72YCETLgfQEIQzKj+8U4WOCS9no5y+NLXQ1Keuyi2UXzAwsHUbeSoVUWOpk9srR/YQc8lL9tU1lRx2ujv7+ojfVt+oHVH8jo1O/yuHxDkUDb4/+TEHhc0oW6hWKBvz3RWF/mN8fRItyoJcWwVfw6m6BCDSQJ16bT4qgSbRs7MPD56swIo7p2PowIc8OKL1tjvGt06ISV2sDH26hEqocqXi3wac99QLqfRIK+EKzqeWFz0bfNvfZOxQxvTJ8=
