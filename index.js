@@ -11,7 +11,12 @@ const bot = new Telegraf(API_TOKEN); //Create new bot
 bot.help(ctx => ctx.reply("Sorry can't help! Bye!")); //same as const Help=ctx => ctx.reply("Hello"); bot.help(Help)
 bot.hears(/hello/i, ctx => ctx.reply('Hello there!')); // /hello/i = (/../i: Regular Experession+case-sensitive)
 bot.start(ctx => ctx.reply("Hello! I am Handsome Chatbot! Please enter /splitbill to continue...."));
+bot.command('hi', ctx => ctx.reply('Please enter a number:')
+  .then((ctx) => {const number = parseInt(ctx.message.text);})
+  .then(() => ctx.reply(ctx.message))
+);
 bot.command('splitbill', ctx => ctx.reply('Who are the people in the bill? /addPeople name1,name2'));
+
 // bot.hears(/[0-9]+/, ctx => {
 //     const number = parseInt(ctx.message.text);
 //     ctx.reply('Enter name1:');
